@@ -1,0 +1,10 @@
+{% extends "index.html" %}
+
+{% block title %} Продукция - Планета экзотики{% endblock %}
+
+{% block content %}
+<h2>{{ product.name }}</h2>
+<p>Цена: {{ product.price }} руб.</p>
+<p>{{ product.description }}</p>
+
+{% endblock %}

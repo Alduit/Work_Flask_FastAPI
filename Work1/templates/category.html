@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+
+{% block title %}{{ category_name }} - Планета экзотики{% endblock %}
+
+{% block content %}
+<h2>{{ category_name }}</h2>
+<ul>
+    {% for subcategory in subcategories %}
+    <li><a href="{{ url_for('subcategory', category_name=category_name|lower, subcategory_name=subcategory) }}">{{subcategory}}</a></li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

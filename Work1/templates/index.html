@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>{% block title %}Планета экзотики{% endblock %}</title>
+</head>
+
+<body>
+    <header>
+        <h1>Планета экзотики</h1>
+        <nav>
+            <a href="/">Главная</a>
+            <a href="/category/turtles">Черепахи</a>
+            <a href="/category/lizards">Ящерицы</a>
+            <a href="/category/snakes">Змеи</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 Планета экзотики</p>
+    </footer>
+</body>
+
+</html>
