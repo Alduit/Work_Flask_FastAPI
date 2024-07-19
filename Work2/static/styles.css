@@ -1,0 +1,11 @@
+.wrapper {
+    display: grid;
+    grid-template-rows: 1fr 10fr 1fr;
+  }
+
+  .content {
+    background-color: gainsboro;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>{% block title %}Авторизация(Work2){% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Work2</h1>
+        </header>
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+        <footer>
+            <p>2024 Здесь могло быть название вашего магазина)&copy;</p>
+        </footer>
+    </div>
+</body>
+
+</html>
