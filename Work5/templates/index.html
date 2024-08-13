@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Task Management API</title>
+    </head>
+    <body>
+        <h1>Task Management API</h1>
+        <p>Available commands:</p>
+        <ul>
+            <li>
+                <a href="/tasks">GET /tasks</a> - Get list of all tasks<br>
+                <code>curl -X 'GET' 'http://127.0.0.1:8000/tasks' -H 'accept: application/json'</code>
+            </li>
+            <li>
+                <a href="/tasks/1">GET /tasks/{id}</a> - Get a task by ID<br>
+                <code>curl -X 'GET' 'http://127.0.0.1:8000/tasks/1' -H 'accept: application/json'</code>
+            </li>
+            <li>
+                <a href="https://www.postman.com/">POST /tasks</a> - Add a new task (use Postman)<br>
+                <code>curl -X 'POST' 'http://127.0.0.1:8000/tasks' -H 'accept: application/json' -H 'Content-Type: application/json' -d '{"title": "Sample Task", "description": "This is a sample task.", "completed": false}'</code>
+            </li>
+            <li>
+                <a href="https://www.postman.com/">PUT /tasks/{id}</a> - Update a task by ID (use Postman)<br>
+                <code>curl -X 'PUT' 'http://127.0.0.1:8000/tasks/1' -H 'accept: application/json' -H 'Content-Type: application/json' -d '{"title": "Updated Task", "description": "This task has been updated.", "completed": true}'</code>
+            </li>
+            <li>
+                <a href="https://www.postman.com/">DELETE /tasks/{id}</a> - Delete a task by ID (use Postman)<br>
+                <code>curl -X 'DELETE' 'http://127.0.0.1:8000/tasks/1' -H 'accept: application/json'</code>
+            </li>
+        </ul>
+        <p>For more details, visit the <a href="/docs">API Documentation</a>.</p>
+    </body>
+</html>
