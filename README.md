@@ -70,7 +70,7 @@ API должен содержать следующие конечные точк
 - SQLAlchemy
 - Pydantic
 - Uvicorn
-- passlib
+- databases
 
 Установка pip install (NameLib)
 
